@@ -20,4 +20,16 @@
 
 // ];
 use think\Route;
-Route::rule("hello", "admin/Index/index");
+
+Route::rule("get/code", "api/Index/savecode");
+
+
+//后台
+Route::rule("login","index/Login/index");
+
+Route::rule("checklogin","index/Login/check");
+// return [
+//     // api版本路由
+//     //'api/:version/:controller'=>'api/:version.:controller/index',// 省略方法名时 网址格式:http://www.xxx.com/api/v1/index
+//     'api//:controller/:function'=>'api/:controller/:function'// 有方法名时 网址格式:http://www.xxx.com/api/v1/index/login
+// ];
